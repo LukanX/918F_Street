@@ -1,0 +1,10 @@
+body {
+  font-family: 'proxima nova soft', 'arial rounded bold', helvetica, arial, sans-serif; }
+
+p {
+  font-family: georgia, serif;
+  font-style: italic; }
+
+nav ul li a {
+  text-transform: uppercase;
+  letter-spacing: 1px; }

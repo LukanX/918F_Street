@@ -1,0 +1,36 @@
+body {
+  width: 100%; }
+
+section {
+  width: 100%; }
+  section.photo {
+    display: table; }
+    section.photo .container {
+      display: table-cell;
+      vertical-align: middle;
+      padding: 10%;
+      text-align: center; }
+
+#header {
+  background: url("../images/918F_Header_BG.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  background-size: cover; }
+
+nav {
+  width: 100%;
+  background: #231f20; }
+  nav ul {
+    list-style: none;
+    text-align: center; }
+    nav ul li {
+      display: inline-block;
+      padding: 20px; }
+      nav ul li a {
+        color: #808284;
+        text-decoration: none; }
+        nav ul li a:hover {
+          color: #fff; }
+
+.content {
+  width: 940px;
+  margin: auto; }
