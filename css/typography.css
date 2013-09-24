@@ -1,10 +1,24 @@
 body {
-  font-family: 'proxima nova soft', 'arial rounded bold', helvetica, arial, sans-serif; }
+  font-family: 'proxima nova soft', 'helvetica neue', helvetica, arial, sans-serif; }
 
 p {
   font-family: georgia, serif;
-  font-style: italic; }
+  font-style: italic;
+  color: #808284; }
 
 nav ul li a {
   text-transform: uppercase;
   letter-spacing: 1px; }
+
+h1, h2, h3, h4, h5, h6 {
+  text-transform: uppercase;
+  font-weight: normal;
+  color: #262626; }
+
+h1 {
+  font-size: 28px;
+  letter-spacing: 2px;
+  margin-bottom: 20px; }
+  h1 ~ p {
+    font-size: 22px;
+    padding: 0 80px 20px; }

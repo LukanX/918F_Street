@@ -2,7 +2,10 @@ body {
   width: 100%; }
 
 section {
-  width: 100%; }
+  width: 100%;
+  text-align: center; }
+  section.info {
+    padding-top: 40px; }
   section.photo {
     display: table; }
     section.photo .container {
@@ -25,6 +28,19 @@ nav {
     nav ul li {
       display: inline-block;
       padding: 20px; }
+      nav ul li.selected a {
+        color: #fff; }
+      nav ul li.selected:before {
+        width: 0;
+        height: 0;
+        content: "";
+        border-style: solid;
+        border-width: 0 12.5px 10px 12.5px;
+        border-color: transparent transparent #ffffff transparent;
+        position: absolute;
+        bottom: 0px;
+        left: 50%;
+        margin-left: -10px; }
       nav ul li a {
         color: #808284;
         text-decoration: none; }
