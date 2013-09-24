@@ -4,8 +4,17 @@ body{
 section{
   width: 100%;
   text-align: center;
-  &.info{
-    padding-top: 40px;
+  .section-header{
+    padding: 0px 80px 60px;
+  }
+  &.grey, &.white{
+    padding: 60px 0;
+  }
+  &.white{
+    background: #fff;
+  }
+  &.grey{
+    background: #e6e7e8;
   }
   &.photo{
     display: table;
@@ -18,10 +27,48 @@ section{
   }
 }
 
+.black-box{
+  background: #231f20;
+  display: table;
+  .container{
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+  }
+  h1{
+    color: #fff;
+    margin-bottom: 0px;
+  }
+  p{
+    padding: 0px;
+    font-size: 18px;
+  }
+}
+
+#join-us{
+  width: 380px;
+  height: 135px;
+}
+
 #header{
   background: url('../images/918F_Header_BG.jpg') no-repeat center center fixed;
   -webkit-background-size: cover;
   background-size: cover;
+}
+
+ul.mosaic{
+  list-style: none;
+  li{
+    float: left;
+    margin-bottom: 20px;
+    display: block;
+    img{
+      display: block;
+    }
+    &.left{
+      margin-right: 20px;
+    }
+  }
 }
 
 nav{
@@ -64,4 +111,5 @@ nav{
 .content{
   width: 940px;
   margin: auto;
+  overflow: auto;
 }

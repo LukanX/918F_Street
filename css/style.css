@@ -4,8 +4,14 @@ body {
 section {
   width: 100%;
   text-align: center; }
-  section.info {
-    padding-top: 40px; }
+  section .section-header {
+    padding: 0px 80px 60px; }
+  section.grey, section.white {
+    padding: 60px 0; }
+  section.white {
+    background: #fff; }
+  section.grey {
+    background: #e6e7e8; }
   section.photo {
     display: table; }
     section.photo .container {
@@ -14,10 +20,39 @@ section {
       padding: 10%;
       text-align: center; }
 
+.black-box {
+  background: #231f20;
+  display: table; }
+  .black-box .container {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center; }
+  .black-box h1 {
+    color: #fff;
+    margin-bottom: 0px; }
+  .black-box p {
+    padding: 0px;
+    font-size: 18px; }
+
+#join-us {
+  width: 380px;
+  height: 135px; }
+
 #header {
   background: url("../images/918F_Header_BG.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   background-size: cover; }
+
+ul.mosaic {
+  list-style: none; }
+  ul.mosaic li {
+    float: left;
+    margin-bottom: 20px;
+    display: block; }
+    ul.mosaic li img {
+      display: block; }
+    ul.mosaic li.left {
+      margin-right: 20px; }
 
 nav {
   width: 100%;
@@ -49,4 +84,5 @@ nav {
 
 .content {
   width: 940px;
-  margin: auto; }
+  margin: auto;
+  overflow: auto; }
