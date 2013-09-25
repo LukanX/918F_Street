@@ -1,17 +1,22 @@
-body {
-  width: 100%; }
+body, html {
+  width: 100%;
+  height: 100%; }
 
 section {
   width: 100%;
   text-align: center; }
   section .section-header {
     padding: 0px 80px 60px; }
-  section.grey, section.white {
-    padding: 60px 0; }
+  section.info {
+    padding: 80px 0; }
   section.white {
     background: #fff; }
   section.grey {
     background: #e6e7e8; }
+  section.black {
+    background: #231f20; }
+    section.black h1, section.black p, section.black a {
+      color: #fff; }
   section.photo {
     display: table; }
     section.photo .container {
@@ -23,25 +28,39 @@ section {
 .black-box {
   background: #231f20;
   display: table; }
+  .black-box h1, .black-box p, .black-box a {
+    color: #fff; }
+  .black-box h1, .black-box p {
+    margin-bottom: 15px; }
   .black-box .container {
     display: table-cell;
     vertical-align: middle;
     text-align: center; }
-  .black-box h1 {
-    color: #fff;
-    margin-bottom: 0px; }
-  .black-box p {
-    padding: 0px;
-    font-size: 18px; }
 
 #join-us {
   width: 380px;
   height: 135px; }
+  #join-us h1 {
+    margin-bottom: 0px; }
+  #join-us p {
+    padding: 0px;
+    font-size: 18px;
+    color: #808284; }
 
 #header {
   background: url("../images/918F_Header_BG.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   background-size: cover; }
+
+#speakeasy {
+  background: url("../images/speakeasy.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  background-size: cover;
+  height: 100%; }
+  #speakeasy .black-box {
+    width: 425px;
+    padding: 40px;
+    margin: auto; }
 
 ul.mosaic {
   list-style: none; }
@@ -85,4 +104,31 @@ nav {
 .content {
   width: 940px;
   margin: auto;
-  overflow: auto; }
+  overflow: hidden; }
+
+.event-types {
+  display: block;
+  margin-bottom: 30px; }
+  .event-types li {
+    display: inline-block;
+    width: 33%;
+    padding: 20px;
+    border-right: 1px solid black; }
+    .event-types li:last-child {
+      border: none; }
+
+.btn {
+  padding: 10px 20px;
+  border: 2px solid #231f20;
+  display: inline-block;
+  letter-spacing: 2px; }
+
+#history img {
+  float: left; }
+#history p {
+  float: left;
+  width: 640px;
+  padding-left: 40px;
+  text-align: left;
+  font-size: 20px;
+  font-style: normal; }

@@ -1,5 +1,6 @@
-body{
+body,html{
   width: 100%;
+  height: 100%;
 }
 section{
   width: 100%;
@@ -7,14 +8,20 @@ section{
   .section-header{
     padding: 0px 80px 60px;
   }
-  &.grey, &.white{
-    padding: 60px 0;
+  &.info{
+    padding: 80px 0;
   }
   &.white{
     background: #fff;
   }
   &.grey{
     background: #e6e7e8;
+  }
+  &.black{
+    background: #231f20;
+    h1, p, a{
+      color: #fff;
+    }
   }
   &.photo{
     display: table;
@@ -30,30 +37,50 @@ section{
 .black-box{
   background: #231f20;
   display: table;
+  h1, p, a{
+    color: #fff;
+  }
+  h1, p{
+    margin-bottom: 15px;
+  }
   .container{
     display: table-cell;
     vertical-align: middle;
     text-align: center;
   }
-  h1{
-    color: #fff;
-    margin-bottom: 0px;
-  }
-  p{
-    padding: 0px;
-    font-size: 18px;
-  }
+  
 }
 
 #join-us{
   width: 380px;
   height: 135px;
+  h1{
+    margin-bottom: 0px;
+  }
+  p{
+    padding: 0px;
+    font-size: 18px;
+    color: #808284;
+  }
 }
 
 #header{
   background: url('../images/918F_Header_BG.jpg') no-repeat center center fixed;
   -webkit-background-size: cover;
   background-size: cover;
+}
+
+#speakeasy{
+  background: url('../images/speakeasy.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  background-size: cover;
+
+  height: 100%;
+  .black-box{
+    width: 425px;
+    padding: 40px;
+    margin: auto;
+  }
 }
 
 ul.mosaic{
@@ -111,5 +138,40 @@ nav{
 .content{
   width: 940px;
   margin: auto;
-  overflow: auto;
+  overflow: hidden;
+}
+
+.event-types{
+  display: block;
+  margin-bottom: 30px;
+  li{
+    display: inline-block;
+    width: 33%;
+    padding: 20px;
+    border-right: 1px solid black;
+    &:last-child{
+      border: none;
+    }
+  }
+}
+
+.btn{
+  padding: 10px 20px;
+  border: 2px solid #231f20;
+  display: inline-block;
+  letter-spacing: 2px;
+}
+
+#history{
+  img{
+    float: left;
+  }
+  p{
+    float: left;
+    width: 640px;
+    padding-left: 40px;
+    text-align: left;
+    font-size: 20px;
+    font-style: normal;
+  }
 }
