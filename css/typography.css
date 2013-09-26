@@ -5,6 +5,13 @@ p {
   font-family: georgia, serif;
   font-style: italic;
   color: #808284; }
+  p.address {
+    font-style: normal;
+    font-size: 20px;
+    margin-bottom: 15px;
+    line-height: 1.4em; }
+    p.address a {
+      font-style: italic; }
 
 a {
   text-decoration: none; }
@@ -24,6 +31,12 @@ h1 {
   margin-bottom: 20px; }
   h1 ~ p {
     font-size: 22px; }
+
+h2 {
+  font-size: 20px;
+  letter-spacing: 4px;
+  margin-bottom: 10px;
+  color: #fff; }
 
 h3 {
   font-size: 17px;
