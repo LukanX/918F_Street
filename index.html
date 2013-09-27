@@ -6,6 +6,7 @@
   <link rel="stylesheet" href="css/application.css">
   <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
   <script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
+  <script type="text/javascript" src="js/waypoints.min.js"></script>
 </head>
 <body>
 
@@ -22,7 +23,7 @@
   <nav>
     <div class="content">
       <ul>
-        <li class = "selected"><a href="#original">original experiences</a></li>
+        <li><a href="#original">original experiences</a></li>
         <li><a href="#meetings">meetings &amp; events</a></li>
         <li><a href="#speakeasy">the speakeasy</a></li>
         <li><a href="#history">history</a></li>
@@ -30,6 +31,7 @@
       </ul>
     </div>
   </nav>
+  <div class="pusher"></div>
 
   <!-- Original Experiences -->
 
@@ -189,9 +191,49 @@ Today, we’re dedicated to keeping the building just as lively as it always was
 </body>
 <script>
   $(document).ready(function() {
+
+    var $root = $('html, body');
+    var navLink = $('nav li a')
+    var navigationLinks = $('nav li')
+    var sections = $('section');
+    var navHeight = $('nav').height();
+
     $('.flexslider').flexslider({
       animation: "slide"
     });
+
+    $(navLink).click(function(){
+      $root.animate({scrollTop:$(this.hash).offset().top - navHeight}, 500);
+      return false;
+    });
+
+    $(window).scroll(function(){
+      var aboveHeight = $('header').height();
+
+
+      sections.waypoint({
+          handler: function(event, direction) {
+          var active_selection;
+
+          active_selection = $(this);
+          if (direction == 'up') active_selection = active_selection.prev();
+          var active_link = $('nav a[href="#' + active_selection.attr("id") + '"]').parent('li');
+          navigationLinks.removeClass('selected');
+          active_link.addClass('selected');
+
+        },
+        offset: navHeight
+      });
+
+      //if scrolled down more than the header’s height
+      if ($(this).scrollTop() > aboveHeight) {
+        $('nav').addClass('fixed').next().css('padding-top', navHeight);
+      } else {
+        $('nav').removeClass('fixed').next().css('padding-top', '0px'); 
+      }
+    });
+
+
   });
 </script>
 </html>
