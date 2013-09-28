@@ -51,6 +51,21 @@ section {
   background: url("../images/918F_Header_BG.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   background-size: cover; }
+  #header .black-box {
+    margin: auto; }
+    #header .black-box .container {
+      padding: 40px 0; }
+    #header .black-box p {
+      color: #808284;
+      width: 75%;
+      font-size: 18px;
+      margin: 10px auto 0; }
+    #header .black-box h3 {
+      color: #fff;
+      letter-spacing: 6px;
+      margin-bottom: 10px;
+      width: 75%;
+      margin: auto; }
 
 #speakeasy {
   background: url("../images/speakeasy.jpg") no-repeat center center fixed;

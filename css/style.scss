@@ -68,6 +68,26 @@ section{
   background: url('../images/918F_Header_BG.jpg') no-repeat center center fixed;
   -webkit-background-size: cover;
   background-size: cover;
+  .black-box{
+    margin: auto;
+    //padding: 20px;
+    .container{
+      padding: 40px 0;
+    }
+    p{
+      color: #808284;
+      width: 75%;
+      font-size: 18px;
+      margin: 10px auto 0;
+    }
+    h3{
+      color: #fff;
+      letter-spacing: 6px;
+      margin-bottom: 10px;
+      width: 75%;
+      margin: auto;
+    }
+  }
 }
 
 #speakeasy{
