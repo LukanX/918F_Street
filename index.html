@@ -29,6 +29,9 @@
 
   <!-- Nav -->
   <nav>
+    <div class="branding hidden">
+      <h2>livingsocial's</h2><img src="images/918F.png" alt="918F Street">
+    </div>
     <div class="content">
       <ul>
         <li><a href="#original">original experiences</a></li>
@@ -235,9 +238,11 @@ Today, we’re dedicated to keeping the building just as lively as it always was
 
       //if scrolled down more than the header’s height
       if ($(this).scrollTop() > aboveHeight) {
+        $('.branding').removeClass('hidden');
         $('nav').addClass('fixed').next().css('padding-top', navHeight);
       } else {
-        $('nav').removeClass('fixed').next().css('padding-top', '0px'); 
+        $('.branding').addClass('hidden'); 
+        $('nav').removeClass('fixed').next().css('padding-top', '0px');
       }
     });
 

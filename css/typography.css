@@ -4,7 +4,8 @@ body {
 p {
   font-family: georgia, serif;
   font-style: italic;
-  color: #808284; }
+  color: #808284;
+  line-height: 1.3em; }
   p.address {
     font-style: normal;
     font-size: 20px;
@@ -30,7 +31,7 @@ h1 {
   letter-spacing: 4px;
   margin-bottom: 20px; }
   h1 ~ p {
-    font-size: 22px; }
+    font-size: 18px; }
 
 h2 {
   font-size: 20px;
