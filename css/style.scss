@@ -74,6 +74,11 @@ section{
     .container{
       padding: 40px 0;
     }
+    .ls-logo{
+      display: block;
+      margin: -10px auto 15px;
+      height: 60px;
+    }
     p{
       color: #808284;
       width: 75%;
@@ -125,7 +130,7 @@ nav{
   .branding{
     padding: 20px 0 0 0px;
     margin: auto;
-    max-height: 50px;
+    max-height: 70px;
     overflow: hidden;
     -webkit-transition: .5s;
     -moz-transition:    .5s;
@@ -149,7 +154,7 @@ nav{
       vertical-align: top;
     }
     img{
-      height: 24px;
+      height: 50px;
     }
   }
   ul{

@@ -55,6 +55,10 @@ section {
     margin: auto; }
     #header .black-box .container {
       padding: 40px 0; }
+    #header .black-box .ls-logo {
+      display: block;
+      margin: -10px auto 15px;
+      height: 60px; }
     #header .black-box p {
       color: #808284;
       width: 75%;
@@ -94,7 +98,7 @@ nav {
   nav .branding {
     padding: 20px 0 0 0px;
     margin: auto;
-    max-height: 50px;
+    max-height: 70px;
     overflow: hidden;
     -webkit-transition: .5s;
     -moz-transition: .5s;
@@ -116,7 +120,7 @@ nav {
       font-size: 24px;
       vertical-align: top; }
     nav .branding img {
-      height: 24px; }
+      height: 50px; }
   nav ul {
     list-style: none;
     text-align: center; }
