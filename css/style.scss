@@ -51,6 +51,25 @@ section{
   
 }
 
+.video-link{
+  display: block;
+  .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: url('../images/play-button.png') no-repeat center center;
+    opacity: .5;
+    z-index: 10;
+    transition: .5s;
+    &:hover{
+      background-color: rgba(0,0,0,.8);
+      opacity: .8;
+    }
+  }
+}
+
 #join-us{
   width: 380px;
   height: 135px;
@@ -64,8 +83,12 @@ section{
   }
 }
 
+.video-overlay{
+  background: #262626;
+}
+
 #header{
-  background: url('../images/918F_Header_BG.jpg') no-repeat center center;
+  background: url('../images/918F_Header_BG.jpg') no-repeat center center fixed;
   -webkit-background-size: cover;
   background-size: cover;
   .black-box{
