@@ -127,7 +127,7 @@
           <p>The central downtown location and flexible space make this building ideal for successful retail pop-ups and shops.</p>
         </li>
       </ul>
-      <a href="#" class="btn">learn more &raquo;</a>
+      <a href="https://reservations.livingsocial.com/meetings_and_events" class="btn">learn more &raquo;</a>
       
     </div>
   </section>
@@ -216,7 +216,7 @@ Today, we’re dedicated to keeping the building just as lively as it always was
     var navLink = $('nav li a')
     var navigationLinks = $('nav li')
     var sections = $('section');
-    var navHeight = $('nav').height();
+    
 
     $('.flexslider').flexslider({
       animation: "slide"
@@ -229,6 +229,7 @@ Today, we’re dedicated to keeping the building just as lively as it always was
 
     $(window).scroll(function(){
       var aboveHeight = $('header').height();
+      var navHeight = $('nav').height();
 
 
       sections.waypoint({
