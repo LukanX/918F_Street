@@ -98,6 +98,8 @@ section {
     width: 425px;
     padding: 40px;
     margin: auto; }
+    #speakeasy .black-box span {
+      color: #808284; }
 
 ul.mosaic {
   list-style: none; }
