@@ -7,6 +7,8 @@ section {
   text-align: center; }
   section .section-header {
     padding: 0px 80px 60px; }
+    section .section-header .btn {
+      margin-top: 30px; }
   section.info {
     padding: 60px 0; }
   section.white {
@@ -187,7 +189,8 @@ nav {
   padding: 10px 20px 8px;
   border: 2px solid #231f20;
   display: inline-block;
-  letter-spacing: 2px; }
+  letter-spacing: 2px;
+  background: transparent; }
   .btn:hover {
     background: #231f20;
     color: #fff; }
@@ -237,3 +240,31 @@ nav {
   position: fixed;
   top: 0;
   z-index: 100; }
+
+#lean_overlay {
+  position: fixed;
+  z-index: 200;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: none; }
+
+.modal-overlay {
+  width: 600px;
+  padding: 40px 60px;
+  background: #fff; }
+  .modal-overlay label {
+    display: block; }
+    .modal-overlay label span {
+      color: #832e2f; }
+  .modal-overlay input[type*="text"] {
+    margin-bottom: 20px;
+    width: 100%; }
+  .modal-overlay .center {
+    width: 100%; }
+  .modal-overlay .btn {
+    text-align: center;
+    display: block;
+    margin: auto; }

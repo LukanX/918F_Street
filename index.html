@@ -7,6 +7,7 @@
   <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
   <script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
   <script type="text/javascript" src="js/waypoints.min.js"></script>
+  <script type="text/javascript" src="js/jquery.leanModal.min.js"></script>
 </head>
 <body>
 
@@ -51,6 +52,7 @@
       <div class="section-header">
         <h1>original experiences</h1>
         <p>At 918 F Street, we team up with talented local professionals to host original LivingSocial experiences like unique cooking classes, painting &amp; wine, live music, and so much more.</p>
+        <a href="https://reservations.livingsocial.com/" class="btn">view experiences &raquo;</a>
       </div>
       
       <ul class="mosaic">
@@ -76,7 +78,6 @@
           <iframe width="506" height="285" src="http://www.youtube.com/embed/sxcv8BICEmA" frameborder="0" allowfullscreen></iframe>
         </li>
       </ul>
-      <a href="https://reservations.livingsocial.com/" class="btn">view experiences &raquo;</a>
     </div>
   </section>
 
@@ -129,7 +130,7 @@
           <p>The central downtown location and flexible space make this building ideal for successful retail pop-ups and shops.</p>
         </li>
       </ul>
-      <a href="https://reservations.livingsocial.com/meetings_and_events" class="btn">learn more &raquo;</a>
+      <a href="#event-registration-overlay" id="registration-trigger" class="btn">learn more &raquo;</a>
       
     </div>
   </section>
@@ -214,6 +215,51 @@ Today, we’re dedicated to keeping the building just as lively as it always was
 
     </div>
   </section>
+
+  <!-- ************* Modal for event registration *************** -->
+  <div id="event-registration-overlay" class = "modal-overlay" style = "display: none;">
+    <h1>i want to learn more!</h1>
+    <form id="event-registration-form" name="event-registration-form" method="post" action = "index.html">
+      <label for="name">name<span>*</span></label>
+      <input type="text" name="name" id="name" tabindex="1">
+
+      <label for="email">email address<span>*</span></label>
+      <input type="text" name="email" id="email" tabindex="2">
+
+      <label for="phone">phone number</label>
+      <input type="text" name="phone" id="phone" tabindex="3">
+
+      <label for="date">desired date (if known)</label>
+      <input type="text" name="date" id="date" tabindex="4">
+
+      <label for="attendees">number of attendies (if known)</label>
+      <input type="text" name="attendees" id="attendees" tabindex="5">
+
+      <label for="company">company (if applicable)</label>
+      <input type="text" name="company" id="company" tabindex="6">
+
+      <label for="reference">how did you hear about us?</label>
+      <input type="text" name="reference" id="reference" tabindex="7">
+
+      <label for="details">question or additional details</label>
+      <input type="textarea" rows="3" name="details" id="details" tabindex="8">
+
+
+      <input type="submit" name="register-button" id="register-button" class="btn">
+
+      
+
+    </form>
+  </div>
+
+  <script>
+  $(function(){
+    $('#event-registration-form').submit(function(e){
+      e.preventDefault();
+    });
+  });
+  </script>
+
 </body>
 <script>
   $(document).ready(function() {
@@ -232,6 +278,8 @@ Today, we’re dedicated to keeping the building just as lively as it always was
       $root.animate({scrollTop:$(this.hash).offset().top - navHeight}, 500);
       return false;
     });
+
+    $('#registration-trigger').leanModal({top: 110, overlay: 0.6, closeButton:'.modal-overlay .btn'});
 
     $(window).scroll(function(){
       var aboveHeight = $('header').height();
