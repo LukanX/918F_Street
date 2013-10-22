@@ -57,8 +57,7 @@
       
       <ul class="mosaic">
         <li class="left">
-         <img src="images/Switchfoot.jpg" alt="Jon Foreman, the lead singer of Switchfoot, performs on the bar of the Speakeasy in front of delighted fans." class="left"></a>
-
+          <a href="#video-overlay" id="video-trigger" class="video-link"><div class="overlay"></div><img src="images/Cooking.jpg" alt="People participate in a cooking class" class="left"></a>
         </li>
         <li>
           <img src="images/Painting.jpg" alt="People learn to paint while enjoying wine">
@@ -75,8 +74,12 @@
           <img src="images/planting.jpg" alt="people learning to care for plants ">
         </li>
         <li>
-          <iframe width="506" height="285" src="http://www.youtube.com/embed/sxcv8BICEmA" frameborder="0" allowfullscreen></iframe>
+          <img src="images/live-show.jpg" alt="Jon Foreman, the lead singer of Switchfoot, performs on the bar of the Speakeasy in front of delighted fans.">
         </li>
+        <!--
+        <li>
+          
+        </li> -->
       </ul>
     </div>
   </section>
@@ -271,6 +274,13 @@ Today, we’re dedicated to keeping the building just as lively as it always was
     </form>
   </div>
 
+  <!-- *********** Modal for Video ************* -->
+  <div id="video-overlay" class="modal-overlay" style="display:none;">
+    <div class="modal-close">x</div>
+    <iframe width="660" height="372" src="http://www.youtube.com/embed/sxcv8BICEmA" frameborder="0" allowfullscreen></iframe>
+    
+  </div>
+
   <script>
   $(function(){
     $('#event-registration-form').submit(function(e){
@@ -299,6 +309,8 @@ Today, we’re dedicated to keeping the building just as lively as it always was
     });
 
     $('#registration-trigger').leanModal({top: 70, overlay: 0.6, closeButton:'.modal-close'});
+
+    $('#video-trigger').leanModal({top: 110, overlay: 0.6, closeButton:'.modal-close'});
 
     $(window).scroll(function(){
       var aboveHeight = $('header').height();

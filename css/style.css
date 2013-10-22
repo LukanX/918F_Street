@@ -48,12 +48,12 @@ section {
     height: 100%;
     width: 100%;
     background: url("../images/play-button.png") no-repeat center center;
-    opacity: .5;
+    opacity: .7;
     z-index: 10;
     transition: .5s; }
     .video-link .overlay:hover {
       background-color: rgba(0, 0, 0, 0.8);
-      opacity: .8; }
+      opacity: .9; }
 
 #join-us {
   width: 380px;
@@ -64,9 +64,6 @@ section {
     padding: 0px;
     font-size: 18px;
     color: #808284; }
-
-.video-overlay {
-  background: #262626; }
 
 #header {
   background: url("../images/918F_Header_BG.jpg") no-repeat center center fixed;
