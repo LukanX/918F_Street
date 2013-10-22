@@ -309,4 +309,5 @@ nav {
   .modal-overlay .btn {
     text-align: center;
     display: block;
-    margin: auto; }
+    margin: auto;
+    margin-bottom: 10px; }
