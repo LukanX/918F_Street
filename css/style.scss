@@ -191,8 +191,9 @@ nav{
       &.selected{
         a{
           color: #fff;
+          //border-bottom: 2px solid #fff;
         }
-        &:before{
+        /*&:before{
           width: 0;
           height: 0;
           content: "";
@@ -203,11 +204,12 @@ nav{
           bottom: 0px;
           left: 50%;
           margin-left: -10px;
-        }
+        }*/
       }
       a{
         color: #808284;
         text-decoration: none;
+        //padding-bottom: 5px;
         &:hover{
           color: #fff;
         }
