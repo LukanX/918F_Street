@@ -252,16 +252,54 @@ nav {
   display: none; }
 
 .modal-overlay {
-  width: 600px;
-  padding: 40px 60px;
+  width: 740px;
+  padding: 30px 40px;
   background: #fff; }
+  .modal-overlay .half {
+    width: 320px;
+    margin-right: 20px;
+    float: left; }
+  .modal-overlay .full {
+    width: 660px;
+    float: left; }
+  .modal-overlay .third {
+    width: 210px;
+    margin-right: 20px;
+    float: left; }
+  .modal-overlay .two-third {
+    width: 430px;
+    margin-right: 20px;
+    float: left; }
+  .modal-overlay .quarter {
+    width: 150px;
+    margin-right: 20px; }
+  .modal-overlay .last {
+    margin-right: 0px; }
+  .modal-overlay h1, .modal-overlay p {
+    text-align: center; }
+  .modal-overlay h1 {
+    margin-bottom: 10px; }
+  .modal-overlay p {
+    margin-bottom: 20px; }
   .modal-overlay label {
-    display: block; }
+    display: block;
+    margin-bottom: 5px; }
     .modal-overlay label span {
       color: #832e2f; }
-  .modal-overlay input[type*="text"] {
+  .modal-overlay input[type="text"], .modal-overlay textarea {
     margin-bottom: 20px;
+    font-size: 18px;
+    padding: 5px 10px;
+    background: #fafafa;
+    border: 1px solid #e0e0e0;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
     width: 100%; }
+  .modal-overlay input[type="text"] {
+    height: 40px; }
+  .modal-overlay textarea {
+    resize: none; }
   .modal-overlay .center {
     width: 100%; }
   .modal-overlay .btn {

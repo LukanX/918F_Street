@@ -218,34 +218,52 @@ Today, we’re dedicated to keeping the building just as lively as it always was
 
   <!-- ************* Modal for event registration *************** -->
   <div id="event-registration-overlay" class = "modal-overlay" style = "display: none;">
-    <h1>i want to learn more!</h1>
+    <h1>tell me more</h1>
+    <p>send me information about private meetings and events</p>
     <form id="event-registration-form" name="event-registration-form" method="post" action = "index.html">
-      <label for="name">name<span>*</span></label>
-      <input type="text" name="name" id="name" tabindex="1">
+      <div class="half">
+        <label for="name">name<span>*</span></label>
+        <input type="text" name="name" id="name" tabindex="1">
+      </div>
 
-      <label for="email">email address<span>*</span></label>
-      <input type="text" name="email" id="email" tabindex="2">
+      <div class="half">
+        <label for="email">email address<span>*</span></label>
+        <input type="text" name="email" id="email" tabindex="2"> 
+      </div>
 
-      <label for="phone">phone number</label>
-      <input type="text" name="phone" id="phone" tabindex="3">
+      <div class="half last">
+        <label for="phone">phone number</label>
+        <input type="text" name="phone" id="phone" tabindex="3">        
+      </div>
 
-      <label for="date">desired date (if known)</label>
-      <input type="text" name="date" id="date" tabindex="4">
+      <div class="third">
+        <label for="date">desired date (optional)</label>
+        <input type="text" name="date" id="date" tabindex="4">
+      </div>
 
-      <label for="attendees">number of attendies (if known)</label>
-      <input type="text" name="attendees" id="attendees" tabindex="5">
+      <div class="third">
+        <label for="attendees">number of attendies (optional)</label>
+        <input type="text" name="attendees" id="attendees" style = "width: 100px" tabindex="5">
+      </div>
 
-      <label for="company">company (if applicable)</label>
-      <input type="text" name="company" id="company" tabindex="6">
+      <div class="third">
+        <label for="company">company (if applicable)</label>
+        <input type="text" name="company" id="company" tabindex="6">
+      </div>
 
-      <label for="reference">how did you hear about us?</label>
-      <input type="text" name="reference" id="reference" tabindex="7">
+      <div class="two-third last">
+        <label for="reference">how did you hear about us?</label>
+        <input type="text" name="reference" id="reference" tabindex="7"> 
+      </div>
 
-      <label for="details">question or additional details</label>
-      <input type="textarea" rows="3" name="details" id="details" tabindex="8">
+      <div class="full">
+        <label for="details">question or additional details</label>
+        <textarea name="details" id="details" rows="4"></textarea>
+      </div>
 
-
-      <input type="submit" name="register-button" id="register-button" class="btn">
+      <div class="full">
+        <input type="submit" name="register-button" id="register-button" class="btn" value = "submit">
+      </div>
 
       
 
@@ -279,7 +297,7 @@ Today, we’re dedicated to keeping the building just as lively as it always was
       return false;
     });
 
-    $('#registration-trigger').leanModal({top: 110, overlay: 0.6, closeButton:'.modal-overlay .btn'});
+    $('#registration-trigger').leanModal({top: 110, overlay: 0.6, closeButton:'.modal-overlay .close'});
 
     $(window).scroll(function(){
       var aboveHeight = $('header').height();
