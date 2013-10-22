@@ -325,6 +325,17 @@ nav{
 }
 
 .modal-overlay{
+  width: 740px;
+  padding: 30px 40px;
+  background: #fff;
+  .modal-close{
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 22px;
+  }
   .half{
     width: 320px;
     margin-right: 20px;
@@ -360,9 +371,6 @@ nav{
   p{
     margin-bottom: 20px;
   }
-  width: 740px;
-  padding: 30px 40px;
-  background: #fff;
   label{
     display: block;
     margin-bottom: 5px;
