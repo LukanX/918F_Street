@@ -267,11 +267,11 @@ nav {
     width: 660px;
     float: left; }
   .modal-overlay .third {
-    width: 210px;
-    margin-right: 20px;
+    width: 206px;
+    margin-right: 21px;
     float: left; }
   .modal-overlay .two-third {
-    width: 430px;
+    width: 433px;
     margin-right: 20px;
     float: left; }
   .modal-overlay .quarter {
@@ -285,6 +285,9 @@ nav {
     margin-bottom: 10px; }
   .modal-overlay p {
     margin-bottom: 20px; }
+    .modal-overlay p.small {
+      margin: 0;
+      font-size: 14px; }
   .modal-overlay label {
     display: block;
     margin-bottom: 5px; }
@@ -292,7 +295,7 @@ nav {
       color: #832e2f; }
   .modal-overlay input[type="text"], .modal-overlay textarea {
     margin-bottom: 20px;
-    font-size: 18px;
+    font-size: 16px;
     padding: 5px 10px;
     background: #fafafa;
     border: 1px solid #e0e0e0;

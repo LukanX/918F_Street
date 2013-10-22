@@ -342,12 +342,12 @@ nav{
     float: left;
   }
   .third{
-    width: 210px;
-    margin-right: 20px;
+    width: 206px;
+    margin-right: 21px;
     float: left;
   }
   .two-third{
-    width: 430px;
+    width: 433px;
     margin-right: 20px;
     float: left;
   }
@@ -366,6 +366,10 @@ nav{
   }
   p{
     margin-bottom: 20px;
+    &.small{
+      margin: 0;
+      font-size: 14px;
+    }
   }
   label{
     display: block;
@@ -376,7 +380,7 @@ nav{
   }
   input[type="text"], textarea{
     margin-bottom: 20px;
-    font-size: 18px;
+    font-size: 16px;
     padding: 5px 10px;
     background: #fafafa;
     border: 1px solid #e0e0e0;
