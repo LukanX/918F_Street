@@ -263,7 +263,7 @@ nav{
   &.expanded{
     opacity: 1;
     padding-top: 20px;
-    max-height: 800px;
+    max-height: 850px;
   }
 }
 
@@ -280,8 +280,8 @@ nav{
 }
 #registration-form{
   margin: auto;
-  padding: 30px;
-  width: 630px;
+  padding: 40px;
+  width: 682px;
   border: 1px solid;
   h1,p{
     text-align: center;
@@ -332,7 +332,7 @@ nav{
     margin-bottom: 10px;
   }
   .half{
-    width: 270px;
+    width: 290px;
     margin-right: 20px;
     float: left;
     &.last{
