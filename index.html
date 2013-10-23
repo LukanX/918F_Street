@@ -84,7 +84,7 @@
     </div>
   </section>
 
-  <!-- Meetings -->
+  <!-- **************** Meetings & Private Events ******************** -->
 
  <section class="info grey" id="meetings">
     <div class="content">
@@ -133,12 +133,83 @@
           <p>The central downtown location and flexible space make this building ideal for successful retail pop-ups and shops.</p>
         </li>
       </ul>
-      <a href="#event-registration-overlay" id="registration-trigger" class="btn">learn more &raquo;</a>
       
     </div>
+    <div class="content drawer">
+      <div id="registration-form" class="col5">
+        <h1>tell me more</h1>
+        <p>send me information about private meetings and events</p>
+        <form id="event-registration-form" name="event-registration-form" method="post" action = "index.html">
+          <div class="half">
+            <label for="name">name<span>*</span></label>
+            <input type="text" name="name" id="name" tabindex="1">
+          </div>
+          
+
+          <div class="half last">
+            <label for="email">email address<span>*</span></label>
+            <input type="text" name="email" id="email" tabindex="2"> 
+          </div>
+          
+
+          <div class="half">
+            <label for="phone">phone number</label>
+            <input type="text" name="phone" id="phone" tabindex="3">
+          </div>        
+
+          <div class="half last">
+            <label for="company">company (if applicable)</label>
+            <input type="text" name="company" id="company" tabindex="4">
+          </div>
+          
+
+          <div class="half">
+            <label for="date">desired date (if known)</label>
+            <input type="text" name="date" id="date" tabindex="5">
+          </div>
+          
+          <div class="half last">
+            <label for="time">desired start/end time (if known)</label>
+          <input type="text" name="time" id="time" tabindex="6">
+          </div>
+
+          <div class="half">
+            <label for="attendees">number of attendees (if known)</label>
+            <input type="text" name="attendees" id="attendees" tabindex="7">
+          </div>
+          
+
+          <div class="half last">
+            <label for="budget">budget (if known)</label>
+            <input type="text" name="budget" id="budget" tabindex="8">
+          </div>
+          
+
+          <label for="reference">how did you hear about us?</label>
+          <input type="text" name="reference" id="reference" tabindex="9"> 
+
+          <label for="details">questions or additional details</label>
+          <textarea name="details" id="details" rows="4" tabindex="10"></textarea>
+
+          <input type="submit" name="register-button" id="register-button" class="btn" value = "submit" tabindex="11">
+          <p class = "small">* = required</p>
+
+        </form>
+        
+      </div>
+
+      <div class="col3 last" id="floor-plan">
+        <h1>floor plans</h1>
+        <div class="placeholder"></div>
+        <div class="placeholder"></div>
+        <div class="placeholder"></div>
+      </div>
+    </div>
+    <a href="#event-registration-foldout" id="registration-trigger" class="btn">learn more &raquo;</a>
+    
   </section>
 
-  <!-- Speakeasy -->
+  <!-- *********************** Speakeasy *********************** -->
   <section class="photo" id="speakeasy">
     <div class="container">
       <div class="black-box">
@@ -219,7 +290,7 @@ Today, we’re dedicated to keeping the building just as lively as it always was
     </div>
   </section>
 
-  <!-- ************* Modal for event registration *************** -->
+  <!-- ************* Modal for event registration *************** 
   <div id="event-registration-overlay" class = "modal-overlay" style = "display: none;">
     <div class="modal-close">x</div>
     <h1>tell me more</h1>
@@ -285,7 +356,7 @@ Today, we’re dedicated to keeping the building just as lively as it always was
       
 
     </form>
-  </div>
+  </div> -->
 
   <!-- *********** Modal for Video ************* -->
   <div id="video-overlay" class="modal-overlay" style="display:none;">
@@ -321,7 +392,19 @@ Today, we’re dedicated to keeping the building just as lively as it always was
       return false;
     });
 
-    $('#registration-trigger').leanModal({top: 70, overlay: 0.6, closeButton:'.modal-close'});
+    $('#registration-trigger').click(function(e){
+      e.preventDefault();
+      if ($('.drawer').hasClass('expanded')){
+        $('.drawer').removeClass('expanded');
+        $('#registration-trigger').html("learn more &raquo;").removeClass('collapse');
+      }
+      else{
+        $('.drawer').addClass('expanded');
+        $('#registration-trigger').html("").addClass('collapse');
+      }
+    });
+
+    /*$('#registration-trigger').leanModal({top: 70, overlay: 0.6, closeButton:'.modal-close'});*/
 
     $('#video-trigger').leanModal({top: 110, overlay: 0.6, closeButton:'.modal-close'});
 

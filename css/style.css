@@ -172,6 +172,89 @@ nav {
   width: 940px;
   margin: auto;
   overflow: hidden; }
+  .content div[class*="col"] {
+    padding-right: 20px;
+    float: left; }
+    .content div[class*="col"].last {
+      padding-right: 0; }
+  .content .col1 {
+    width: 100px; }
+  .content .col2 {
+    width: 220px; }
+  .content .col3 {
+    width: 340px; }
+  .content .col4 {
+    width: 460px; }
+  .content .col5 {
+    width: 580px; }
+  .content .col6 {
+    width: 700px; }
+  .content .col7 {
+    width: 820px; }
+  .content .col8 {
+    width: 940px;
+    padding-right: 0; }
+
+.drawer {
+  max-height: 0;
+  opacity: 0;
+  transition: .5s; }
+  .drawer.expanded {
+    opacity: 1;
+    padding-top: 20px;
+    max-height: 800px; }
+
+#floor-plan {
+  padding-left: 20px; }
+  #floor-plan .placeholder {
+    width: 100%;
+    background: #262626;
+    height: 180px;
+    margin-bottom: 20px; }
+
+#registration-form h1, #registration-form p {
+  text-align: center; }
+#registration-form h1 {
+  margin-bottom: 10px; }
+#registration-form p {
+  margin-bottom: 20px; }
+  #registration-form p.small {
+    margin: 0;
+    font-size: 14px; }
+#registration-form label {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 5px;
+  text-align: left; }
+  #registration-form label span {
+    color: #832e2f; }
+#registration-form input[type="text"], #registration-form textarea {
+  margin-bottom: 20px;
+  font-size: 16px;
+  padding: 5px 10px;
+  background: #fafafa;
+  border: 1px solid #e0e0e0;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  width: 100%; }
+#registration-form input[type="text"] {
+  height: 40px; }
+#registration-form textarea {
+  resize: none; }
+#registration-form .center {
+  width: 100%; }
+#registration-form .btn {
+  text-align: center;
+  display: block;
+  margin: auto;
+  margin-bottom: 10px; }
+#registration-form .half {
+  width: 270px;
+  margin-right: 20px;
+  float: left; }
+  #registration-form .half.last {
+    margin-right: 0; }
 
 .event-types {
   display: block;
@@ -193,6 +276,17 @@ nav {
   .btn:hover {
     background: #231f20;
     color: #fff; }
+  .btn.collapse {
+    margin-top: 40px;
+    padding: 0;
+    width: 0;
+    border: 0;
+    border-left: 60px solid transparent;
+    border-right: 60px solid transparent;
+    border-bottom: 30px solid rgba(0, 0, 0, 0.3); }
+    .btn.collapse:hover {
+      background: transparent;
+      border-bottom-color: rgba(0, 0, 0, 0.6); }
 
 .social {
   margin: 30px auto; }
@@ -256,7 +350,80 @@ nav {
 .modal-overlay {
   width: 740px;
   padding: 40px 40px;
-  background: #fff; }
+  background: #fff;
+ /*
+.half{
+  width: 320px;
+  margin-right: 20px;
+  float: left;
+}
+.full{
+  width: 660px;
+  float: left;
+}
+.third{
+  width: 206px;
+  margin-right: 21px;
+  float: left;
+}
+.two-third{
+  width: 433px;
+  margin-right: 20px;
+  float: left;
+}
+.quarter{
+  width: 150px;
+  margin-right: 20px;
+}
+.last{
+    margin-right: 0px;
+  }
+h1,p{
+  text-align: center;
+}
+h1{
+  margin-bottom: 10px;
+}
+p{
+  margin-bottom: 20px;
+  &.small{
+    margin: 0;
+    font-size: 14px;
+  }
+}
+label{
+  display: block;
+  margin-bottom: 5px;
+  span{
+    color: #832e2f;
+  }
+}
+input[type="text"], textarea{
+  margin-bottom: 20px;
+  font-size: 16px;
+  padding: 5px 10px;
+  background: #fafafa;
+  border: 1px solid #e0e0e0;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  width: 100%;
+}
+input[type="text"]{
+  height: 40px;
+}
+textarea{
+  resize: none;
+}
+.center{
+  width: 100%;
+}
+.btn{
+  text-align: center;
+  display: block;
+  margin: auto;
+  margin-bottom: 10px;
+}*/ }
   .modal-overlay .modal-close {
     position: absolute;
     top: 5px;
@@ -264,58 +431,3 @@ nav {
     cursor: pointer;
     font-weight: bold;
     font-size: 22px; }
-  .modal-overlay .half {
-    width: 320px;
-    margin-right: 20px;
-    float: left; }
-  .modal-overlay .full {
-    width: 660px;
-    float: left; }
-  .modal-overlay .third {
-    width: 206px;
-    margin-right: 21px;
-    float: left; }
-  .modal-overlay .two-third {
-    width: 433px;
-    margin-right: 20px;
-    float: left; }
-  .modal-overlay .quarter {
-    width: 150px;
-    margin-right: 20px; }
-  .modal-overlay .last {
-    margin-right: 0px; }
-  .modal-overlay h1, .modal-overlay p {
-    text-align: center; }
-  .modal-overlay h1 {
-    margin-bottom: 10px; }
-  .modal-overlay p {
-    margin-bottom: 20px; }
-    .modal-overlay p.small {
-      margin: 0;
-      font-size: 14px; }
-  .modal-overlay label {
-    display: block;
-    margin-bottom: 5px; }
-    .modal-overlay label span {
-      color: #832e2f; }
-  .modal-overlay input[type="text"], .modal-overlay textarea {
-    margin-bottom: 20px;
-    font-size: 16px;
-    padding: 5px 10px;
-    background: #fafafa;
-    border: 1px solid #e0e0e0;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    border-radius: 4px;
-    width: 100%; }
-  .modal-overlay input[type="text"] {
-    height: 40px; }
-  .modal-overlay textarea {
-    resize: none; }
-  .modal-overlay .center {
-    width: 100%; }
-  .modal-overlay .btn {
-    text-align: center;
-    display: block;
-    margin: auto;
-    margin-bottom: 10px; }
