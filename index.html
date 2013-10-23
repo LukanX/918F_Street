@@ -4,10 +4,7 @@
   <meta charset="UTF-8">
   <title>LivingSocial's 918F Street</title>
   <link rel="stylesheet" href="css/application.css">
-  <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
-  <script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
-  <script type="text/javascript" src="js/waypoints.min.js"></script>
-  <script type="text/javascript" src="js/jquery.leanModal.min.js"></script>
+
 </head>
 <body>
 
@@ -375,6 +372,12 @@ Today, we’re dedicated to keeping the building just as lively as it always was
     
   </div>
 
+  <script src="js/modernizr.js"></script>
+  <script src="js/jquery-1.10.2.min.js"></script>
+  <script src="js/jquery.flexslider-min.js"></script>
+  <script src="js/waypoints.min.js"></script>
+  <script src="js/jquery.leanModal.min.js"></script>
+
   <script>
   $(function(){
     $('#event-registration-form').submit(function(e){
@@ -438,7 +441,7 @@ Today, we’re dedicated to keeping the building just as lively as it always was
       });
 
       //if scrolled down more than the header’s height
-      if ($(this).scrollTop() > aboveHeight) {
+      if ($(this).scrollTop() > aboveHeight && $('html').hasClass('no-touch')) {
         $('.branding').removeClass('hidden');
         $('nav').addClass('fixed').next().css('padding-top', navHeight);
       } else {
