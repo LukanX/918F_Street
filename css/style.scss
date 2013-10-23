@@ -279,6 +279,10 @@ nav{
   }
 }
 #registration-form{
+  margin: auto;
+  padding: 30px;
+  width: 630px;
+  border: 1px solid;
   h1,p{
     text-align: center;
   }
@@ -367,12 +371,12 @@ nav{
     padding: 0;
     width: 0;
     border: 0;
-    border-left: 60px solid transparent;
-    border-right: 60px solid transparent;
-    border-bottom: 30px solid rgba(0,0,0,.3);
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 30px solid rgba(35,31,32,.6);
     &:hover{
       background: transparent;
-      border-bottom-color: rgba(0,0,0,.6);
+      border-bottom-color: rgba(35,31,32,1);
     }
   }
 }
