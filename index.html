@@ -405,6 +405,7 @@ Today, we’re dedicated to keeping the building just as lively as it always was
     var navLink = $('nav li a')
     var navigationLinks = $('nav li')
     var sections = $('section');
+    var navHeight = $('nav').height();
     
 
     $('.flexslider').flexslider({
@@ -412,7 +413,13 @@ Today, we’re dedicated to keeping the building just as lively as it always was
     });
 
     $(navLink).click(function(){
-      $root.animate({scrollTop:$(this.hash).offset().top - navHeight}, 500);
+      if ($('.branding').hasClass('hidden')){
+        $root.animate({scrollTop:$(this.hash).offset().top - navHeight}, 500);
+      }
+      else{
+        $root.animate({scrollTop:$(this.hash).offset().top - navHeight - 40}, 500);
+      }
+      
       return false;
     });
 
@@ -455,7 +462,7 @@ Today, we’re dedicated to keeping the building just as lively as it always was
       //if scrolled down more than the header’s height
       if ($(this).scrollTop() > aboveHeight && $('html').hasClass('no-touch')) {
         $('.branding').removeClass('hidden');
-        $('nav').addClass('fixed').next().css('padding-top', navHeight);
+        $('nav').addClass('fixed').next().css('padding-top', navHeight );
       } else {
         $('.branding').addClass('hidden'); 
         $('nav').removeClass('fixed').next().css('padding-top', '0px');
