@@ -50,6 +50,10 @@ section {
     background: url("../images/play-button.png") no-repeat center center;
     opacity: .7;
     z-index: 10;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
     transition: .5s; }
     .video-link .overlay:hover {
       background-color: rgba(0, 0, 0, 0.8);
@@ -198,6 +202,10 @@ nav {
 .drawer {
   max-height: 0;
   opacity: 0;
+  -webkit-transition: .5s;
+  -moz-transition: .5s;
+  -ms-transition: .5s;
+  -o-transition: .5s;
   transition: .5s; }
   .drawer.expanded {
     opacity: 1;

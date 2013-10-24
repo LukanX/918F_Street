@@ -67,7 +67,7 @@ h3 {
     .modal-overlay p a:hover {
       text-decoration: underline; }
     .modal-overlay p a:visited {
-      color: inherit; }
+      color: #0898bb; }
 
 .black-box h1 ~ p {
   font-size: 18px; }

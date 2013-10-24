@@ -65,7 +65,11 @@ section{
     background: url('../images/play-button.png') no-repeat center center;
     opacity: .7;
     z-index: 10;
-    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition:    .5s;
+    -ms-transition:     .5s;
+    -o-transition:      .5s;
+    transition:         .5s;  
     &:hover{
       background-color: rgba(0,0,0,.8);
       opacity: .9;
@@ -259,7 +263,11 @@ nav{
 .drawer{
   max-height: 0;
   opacity: 0;
-  transition: .5s;
+  -webkit-transition: .5s;
+  -moz-transition:    .5s;
+  -ms-transition:     .5s;
+  -o-transition:      .5s;
+  transition:         .5s;
   &.expanded{
     opacity: 1;
     padding-top: 20px;
