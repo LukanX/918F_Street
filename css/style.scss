@@ -457,9 +457,16 @@ nav{
   display: none;
 }
 
-.modal-overlay{
+#video-overlay{
   width: 740px;
   padding: 40px 40px;
+}
+
+#signup-overlay{
+  width: 540px;
+  padding: 60px 40px;
+}
+.modal-overlay{
   background: #fff;
   .modal-close{
     position: absolute;
@@ -500,14 +507,10 @@ nav{
   }
   h1{
     margin-bottom: 10px;
-  }
+  }*/
   p{
-    margin-bottom: 20px;
-    &.small{
-      margin: 0;
-      font-size: 14px;
-    }
-  } */
+    padding-top: 5px;
+  } 
   label{
     display: block;
     margin-bottom: 5px;

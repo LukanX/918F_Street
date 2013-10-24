@@ -56,5 +56,18 @@ h3 {
 .btn {
   font-size: 17px; }
 
+.modal-overlay p {
+  text-align: center; }
+  .modal-overlay p.small {
+    font-size: 16px; }
+  .modal-overlay p a {
+    font-family: 'proxima nova soft', 'helvetica neue', helvetica, arial, sans-serif;
+    font-style: normal;
+    color: #0898bb; }
+    .modal-overlay p a:hover {
+      text-decoration: underline; }
+    .modal-overlay p a:visited {
+      color: inherit; }
+
 .black-box h1 ~ p {
   font-size: 18px; }

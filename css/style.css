@@ -352,9 +352,15 @@ nav {
   background: rgba(0, 0, 0, 0.6);
   display: none; }
 
-.modal-overlay {
+#video-overlay {
   width: 740px;
-  padding: 40px 40px;
+  padding: 40px 40px; }
+
+#signup-overlay {
+  width: 540px;
+  padding: 60px 40px; }
+
+.modal-overlay {
   background: #fff;
  /*
 .half{
@@ -388,14 +394,7 @@ h1,p{
 }
 h1{
   margin-bottom: 10px;
-}
-p{
-  margin-bottom: 20px;
-  &.small{
-    margin: 0;
-    font-size: 14px;
-  }
-} */ }
+}*/ }
   .modal-overlay .modal-close {
     position: absolute;
     top: 5px;
@@ -403,6 +402,8 @@ p{
     cursor: pointer;
     font-weight: bold;
     font-size: 22px; }
+  .modal-overlay p {
+    padding-top: 5px; }
   .modal-overlay label {
     display: block;
     margin-bottom: 5px; }

@@ -60,7 +60,7 @@
           <img src="images/Painting.jpg" alt="People learn to paint while enjoying wine">
         </li>
         <li>
-          <a href="https://www.livingsocial.com/preferences/subscriptions/?auto_subscribe_918f=true&ref=-some_ref_code-"><div class="black-box" id="join-us">
+          <a href="#signup-overlay" id="signup-trigger"><div class="black-box" id="join-us">
           <div class="container">
             <h1>join us</h1>
             <p>sign up for our weekly digest &raquo;</p>
@@ -365,6 +365,17 @@ Today, we’re dedicated to keeping the building just as lively as it always was
     </form>
   </div> -->
 
+  <!-- *********** Modal for email sign-up ************( -->
+  <div id="signup-overlay" class="modal-overlay" style="display: none;">
+    <div class="modal-close">x</div>
+    <form id="event-registration-form" name="event-registration-form" method="post" action = "index.html">
+      <input type="text" name="subscription-email" id="subscription-email" placeholder="enter your email address">
+      <input type="submit" name="register-button" id="register-button" class="btn" value = "sign-up" tabindex>
+      <p class = "small">already a LivingSocial member? <br>
+        <a href="https://www.livingsocial.com/preferences/subscriptions/?auto_subscribe_918f=true&ref=-some_ref_code-">subscribe with your LivingSocial account &raquo;</a></p>
+    </form>
+  </div>
+
   <!-- *********** Modal for Video ************* -->
   <div id="video-overlay" class="modal-overlay" style="display:none;">
     <div class="modal-close">x</div>
@@ -420,6 +431,7 @@ Today, we’re dedicated to keeping the building just as lively as it always was
     /*$('#registration-trigger').leanModal({top: 70, overlay: 0.6, closeButton:'.modal-close'});*/
 
     $('#video-trigger').leanModal({top: 110, overlay: 0.6, closeButton:'.modal-close'});
+    $('#signup-trigger').leanModal({top: 220, overlay: 0.6, closeButton:'.modal-close'});
 
     $(window).scroll(function(){
       var aboveHeight = $('header').height();
