@@ -88,6 +88,13 @@ section{
     font-size: 18px;
     color: #808284;
   }
+  &.black-box:hover{
+    background: #fff;
+    border: 2px solid #231f20;
+    h1,p{
+      color: #231f20;
+    }
+  }
 }
 
 #header{

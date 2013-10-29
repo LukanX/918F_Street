@@ -60,7 +60,7 @@
           <img src="images/Painting.jpg" alt="People learn to paint while enjoying wine">
         </li>
         <li>
-          <a href="#signup-overlay" id="signup-trigger"><div class="black-box" id="join-us">
+          <a href="https://www.livingsocial.com/preferences/subscriptions/?auto_subscribe_918f=true&ref=-some_ref_code-" id="signup-trigger"><div class="black-box" id="join-us">
           <div class="container">
             <h1>join us</h1>
             <p>sign up for our weekly digest &raquo;</p>
@@ -146,7 +146,7 @@
       <div id="registration-form">
         <h1>tell me more</h1>
         <p>send me information about private meetings and events</p>
-        <form id="google-form" name="google-form" method="post" action = "index.html">
+        <form id="google-form" name="google-form" method="post" action = "https://docs.google.com/a/hungrymachine.com/spreadsheet/formResponse?formkey=dFFSWFBxcHg3UUVoMEpmRGstZHJ4d1E6MQ">
           <div class="half">
             <label for="entry_0">name<span>*</span></label>
             <input id="name-input" type="text" name="entry.0.single" value="" id="entry_0" tabindex="1">
@@ -370,7 +370,7 @@ Today, we’re dedicated to keeping the building just as lively as it always was
     </form>
   </div> -->
 
-  <!-- *********** Modal for email sign-up ************( -->
+  <!-- *********** Modal for email sign-up ************* 
   <div id="signup-overlay" class="modal-overlay" style="display: none;">
     <div class="modal-close">x</div>
     <form id="event-registration-form" name="event-registration-form" method="post" action = "index.html">
@@ -379,7 +379,7 @@ Today, we’re dedicated to keeping the building just as lively as it always was
       <p class = "small">already a LivingSocial member? <br>
         <a href="https://www.livingsocial.com/preferences/subscriptions/?auto_subscribe_918f=true&ref=-some_ref_code-">subscribe with your LivingSocial account &raquo;</a></p>
     </form>
-  </div>
+  </div>-->
 
   <!-- *********** Modal for Video ************* -->
   <div id="video-overlay" class="modal-overlay" style="display:none;">
@@ -452,10 +452,13 @@ Today, we’re dedicated to keeping the building just as lively as it always was
       function showThankYou(){
         $('.drawer').removeClass('expanded');
         $('#registration-trigger').css('display','none');
+        $root.animate({scrollTop:$('ul.event-types').offset().top}, 500);
         $('#google-form-confirmation').addClass('show');
       }
 
-    /*$('#registration-trigger').leanModal({top: 70, overlay: 0.6, closeButton:'.modal-close'});*/
+/* **************Registration form modal ****************
+    $('#registration-trigger').leanModal({top: 70, overlay: 0.6, closeButton:'.modal-close'});
+*/
 
     $('#video-trigger').leanModal({top: 110, overlay: 0.6, closeButton:'.modal-close'});
 
@@ -467,8 +470,9 @@ Today, we’re dedicated to keeping the building just as lively as it always was
       $('#cooking-video').attr('src', video);
     });
 
+/* ********Signup Email Modal **********
     $('#signup-trigger').leanModal({top: 220, overlay: 0.6, closeButton:'.modal-close'});
-
+*/
     $(window).scroll(function(){
       var aboveHeight = $('header').height();
       var navHeight = $('nav').height();

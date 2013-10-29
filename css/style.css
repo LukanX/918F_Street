@@ -68,6 +68,11 @@ section {
     padding: 0px;
     font-size: 18px;
     color: #808284; }
+  #join-us.black-box:hover {
+    background: #fff;
+    border: 2px solid #231f20; }
+    #join-us.black-box:hover h1, #join-us.black-box:hover p {
+      color: #231f20; }
 
 #header {
   background: url("../images/918F_Header_BG.jpg") no-repeat center center fixed;
