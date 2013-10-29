@@ -438,3 +438,18 @@ h1{
     display: block;
     margin: auto;
     margin-bottom: 10px; }
+
+.confirmation {
+  opacity: 0;
+  max-height: 0;
+  -webkit-transition: opacity .5s .5s;
+  -moz-transition: opacity .5s .5s;
+  -ms-transition: opacity .5s .5s;
+  -o-transition: opacity .5s .5s;
+  transition: opacity .5s .5s;
+  padding: 10px; }
+  .confirmation.show {
+    opacity: 1;
+    max-height: 200px; }
+  .confirmation h3 {
+    padding-bottom: 0; }
